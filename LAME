@@ -54,8 +54,11 @@ OS and Service detection performed. Please report any incorrect results at https
 
 
 
-
-
+#########################################################
+I've tried  vsftpd 2.3.4 with no luck. Then I found the vulnarability in Samba service.
+You can use Metasploite, which is below.
+Also, A python payload: https://github.com/amriunix/CVE-2007-2447 that you have to run NC command to get connected.
+#########################################################
 
 msf5 exploit(multi/samba/usermap_script) > options
 
