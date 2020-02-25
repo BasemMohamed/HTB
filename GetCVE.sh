@@ -4,7 +4,7 @@
 ip=$1
 ###################################
 
-nmap -vv -A -T4 -oA scanresult $ip | grep -Eo '^[0-9]{1,6}' > openports.csv
+nmap -vv -A -T4 -oA scanresult $ip | grep 'tcp' | grep -Eo '^[0-9]{1,6}' > openports.csv
 
 while read openPort;
 do 
